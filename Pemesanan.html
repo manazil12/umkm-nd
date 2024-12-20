@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UMKM Products - Pemesanan</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="gambar/logo.jpg" alt="UMKM Logo">
+        </div>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="produk.html">Daftar Produk</a></li>
+            <li><a href="pemesanan.html">Pemesanan</a></li>
+            <li><a href="profil.html">Profil</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Form Pemesanan</h1>
+        <div class="order-form">
+            <div class="product-details">
+                <h3>Detail Produk</h3>
+                <div class="form-group">
+                    <label for="produk">Pilih Produk</label>
+                    <select id="produk" required>
+                        <option value="">Pilih Produk</option>
+                        <option value="madu">Madu Murni - Rp 85.000</option>
+                        <option value="rambak">Kerupuk Rambak - Rp 25.000</option>
+                        <option value="petis">Kerupuk Petis - Rp 20.000</option>
+                        <option value="jenang">Jenang Manis - Rp 30.000</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="jumlah">Jumlah</label>
+                    <input type="number" id="jumlah" min="1" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="nama">Nama Lengkap</label>
+                <input type="text" id="nama" required>
+            </div>
+
+            <div class="form-group">
+                <label for="telpon">No. Telepon</label>
+                <input type="tel" id="telpon" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="alamat">Alamat Lengkap</label>
+                <textarea id="alamat" rows="4" required></textarea>
+            </div>
+
+            <button type="submit" class="btn">Pesan Sekarang</button>
+        </div>
+    </div>
+</body>
+</html>
